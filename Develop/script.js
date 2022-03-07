@@ -29,13 +29,20 @@ function invalidNumber() {
     invalidNumber();
     
   }
-  
+  writePassword = parseInt(writePassword);
 }
 
 function characterType() {
   var character = prompt("Press 1 for lowercase or 2 for uppercase");
-
+   /* switch (character) {
+      case 1:
+         
+    }  */
+  var numericSpecial = prompt("Press 1  for numeric values, press 2 for special characters, or 3 for both");
+ 
 }
+
+
 
 /*GIVEN I need a new, secure password
 WHEN I click the button to generate a password
@@ -59,7 +66,7 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = generatePassword();  
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
